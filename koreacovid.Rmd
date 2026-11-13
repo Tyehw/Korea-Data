@@ -72,3 +72,7 @@ fisher.test(table1)
 The P-value is=0.001, which is less than .05. We reject the null hypothesis. We conclude that there is a connection between sex and Covid-19 death in Korea.
 # Conclusions
 
+The question was: Using the Kdata, are we able to determine if men and women are equally likely to die of Covid-19 from data collected in south korea through May 2019.
+We reject the null hypothesis.
+Based on our findings it can be determined that their was a link between sex and covid-19 deaths in Korea.
+The numerical results show that out of 100, 64% of males died compared to 36% of females, indicating that mean are nearly twice as likely to die from covid-19 than women. This is supported by the graphical summary, numerical results, and the inferential results.
