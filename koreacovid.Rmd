@@ -48,7 +48,8 @@ Result is categorical.
 barchartGC(~result + sex,data=kData)
 barchartGC(~result + sex,data=kData, type="percent")
 ```
-The graph suggests that males are most likely to die from Covid-19. 
+
+  The graph suggests that males are most likely to die from Covid-19. 
 
 ## Numerical results
 
@@ -67,5 +68,7 @@ chisqtestGC(table1)
 fisher.test(table1)
 ```
 
+
+The P-value is=0.001, which is less than .05. We reject the null hypothesis. We conclude that there is a connection between sex and Covid-19 death in Korea.
 # Conclusions
 
