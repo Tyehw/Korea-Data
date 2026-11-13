@@ -36,13 +36,36 @@ $H_0$  There is no relationship between gender and death from Covid-19 in Korea.
 
 # Methods 
 
+Sex is categorical. 
+Result is categorical. 
+
 # Data Results
 
-## Graphical results    
+
+## Graphical results  
+
+```{r}
+barchartGC(~result + sex,data=kData)
+barchartGC(~result + sex,data=kData, type="percent")
+```
+The graph suggests that males are most likely to die from Covid-19. 
 
 ## Numerical results
 
+```{r}
+table1 <- xtabs(~result + Sex, data=kData)
+rowPerc(table1)
+colPerc(table1)
+```
+  The numerical results show that out of 100, 64% of males died compared to 36% of females, indicating that mean are nearly twice as likely to die from covid-19 than women.
+
 ## Inferential results 
+
+```{r}
+chisq.test(table1)
+chisqtestGC(table1)
+fisher.test(table1)
+```
 
 # Conclusions
 
